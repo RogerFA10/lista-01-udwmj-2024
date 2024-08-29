@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir Data e Hora</title>
+</head>
+<body>
+
+    <h1>Data e Hora Atuais</h1>
+    <p>
+        <?php
+            // Define o fuso horário
+            date_default_timezone_set('America/Sao_Paulo');
+            
+            // Obtém a data e hora atuais no formato desejado
+            $dataHoraAtual = date('d/m/Y H:i:s');
+            
+            // Exibe a data e hora na página
+            echo "Agora são: $dataHoraAtual";
+        ?>
+    </p>
+
+</body>
+</html>
